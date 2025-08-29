@@ -1,36 +1,17 @@
-import Sidebar from "./components/side-bar"
+import { Routes, Route } from "react-router";
+import DashboardLayout from "./components/layout/dashboard-layout";
+import Home from "./app/home";
 
 function App() {
-  return (
-    <div className=" h-full">
-      <Sidebar />
-      <div className="ml-60 w-fit h-full">
-        hello world
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad beatae aspernatur velit porro adipisci natus impedit odit quia repellat, quos officia totam earum fugit optio deleniti. Dolores autem numquam dolorem.
-      </div>
-    </div>
-  )
+	return (
+		<div className=" h-full">
+			<Routes>
+				<Route element={<DashboardLayout />}>
+					<Route index element={<Home />} />
+				</Route>
+			</Routes>
+		</div>
+	);
 }
 
-export default App
+export default App;
