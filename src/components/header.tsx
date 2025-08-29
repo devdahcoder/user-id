@@ -3,7 +3,7 @@ import Avatar from "./avatar";
 
 const Header = () => {
   return (
-		<div className=" sticky top-0 left-0 w-full bg-black">
+		<div className="z-50 sticky top-0 left-0 w-full bg-black">
 			<div className="py-6 px-7 w-full flex flex-row items-center justify-between">
 				<form className="relative w-full max-w-xs">
 					<input
