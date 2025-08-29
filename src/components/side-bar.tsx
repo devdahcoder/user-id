@@ -7,7 +7,7 @@ const Sidebar = () => {
 	const location = useLocation();
 	return (
 		<aside
-			className="fixed top-0 h-screen w-[15rem] pt-8 bg-[hsba(0, 0%, 12%, 1)] border-r border-gray-200"
+			className="fixed top-0 h-screen w-[15rem] pt-8 bg-[#1E1E1E]"
 			aria-label="Main navigation"
 		>
 			<div className="flex flex-col gap-y-14">
@@ -20,7 +20,7 @@ const Sidebar = () => {
 					aria-label="Primary navigation"
 				>
 					<ul
-						className="flex flex-col items-start gap-y-2"
+						className="flex flex-col items-start gap-y-2.5"
 						role="list"
 					>
 						{SidebarLinks.map(
@@ -39,13 +39,13 @@ const Sidebar = () => {
 									{route ? (
 										<a
 											href={route}
-											className={`relative flex flex-row items-center gap-x-4 px-4 py-3 transition-colors duration-200 hover:bg-gray-100 focus:outline-none ${
+											className={`relative flex flex-row items-center gap-x-4 px-4 py-2.5 transition-colors duration-200 hover:bg-[#222222] focus:outline-none ${
 												disabled
 													? "opacity-50 cursor-not-allowed"
 													: "cursor-pointer"
 											} ${
 												location.pathname === route
-													? "before:content-[' '] before:absolute before:h-full before:w-0.5 before:bg-white before:top-0 before:left-0"
+													? "before:content-[' '] before:absolute before:h-full before:w-0.5 before:bg-white before:top-0 before:left-0 bg-[#222222]"
 													: ""
 											}`}
 											aria-label={`Navigate to ${label}`}
