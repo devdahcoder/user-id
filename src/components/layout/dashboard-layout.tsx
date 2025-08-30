@@ -6,7 +6,7 @@ const DashboardLayout = () => {
 	return (
 		<div className="flex">
 			<Sidebar />
-			<div className="ml-[15rem] w-full min-h-screen">
+			<div className="md:ml-[15rem] w-full min-h-screen">
 				<Header />
 				<main className="px-7 py-8">
 					<Outlet />

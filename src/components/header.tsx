@@ -4,8 +4,8 @@ import Avatar from "./avatar";
 const Header = () => {
   return (
 		<div className="z-20 sticky top-0 left-0 w-full bg-black">
-			<div className="py-6 px-7 w-full flex flex-row items-center justify-between">
-				<form className="relative w-full max-w-xs">
+			<div className=" py-6 px-7 w-full flex flex-row items-center justify-between">
+				<form className="hidden md:flex relative w-full max-w-xs">
 					<input
 						type="search"
 						placeholder="Search"
@@ -31,11 +31,33 @@ const Header = () => {
 				</form>
 
 				<div className="flex flex-row items-center gap-x-5">
-					<button className="flex flex-row items-center justify-center bg-[#181818] rounded-full w-10 h-10">
+					<button className="hidden md:flex flex-row items-center justify-center bg-[#181818] rounded-full w-10 h-10">
 						<BellSvgIcon />
 					</button>
+					<button className="flex flex-row items-center justify-center bg-[#181818] rounded-full w-10 h-10">
+						<svg
+							width="20"
+							height="14"
+							viewBox="0 0 20 14"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M1 7H19M1 1H19M1 13H19"
+								stroke="#75787D"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
 
-					<Avatar src="" alt="" size={40} />
+					<Avatar
+						className="hidden md:flex"
+						src=""
+						alt=""
+						size={40}
+					/>
 				</div>
 			</div>
 		</div>

@@ -7,10 +7,10 @@ const Sidebar = () => {
 	const location = useLocation();
 	return (
 		<aside
-			className="fixed top-0 h-screen w-[15rem] pt-8 bg-[#1E1E1E]"
+			className="fixed top-0 h-screen md:w-[15rem] pt-8 bg-[#1E1E1E]"
 			aria-label="Main navigation"
 		>
-			<div className="flex flex-col gap-y-14">
+			<div className="hidden md:flex flex-col gap-y-14">
 				<div className="flex flex-row pl-12 w-full">
 					<LogoSvgIcon />
 				</div>

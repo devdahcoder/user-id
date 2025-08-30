@@ -75,7 +75,7 @@ const Users = () => {
 
 				<button
 					onClick={handleAddUserClick}
-					className="bg-white text-black flex flex-row items-center gap-x-1.5 rounded-xl py-2.5 px-2 hover:bg-gray-100 transition-colors"
+					className="bg-white text-black hidden md:flex flex-row items-center gap-x-1.5 rounded-xl py-2.5 px-2 hover:bg-gray-100 transition-colors"
 				>
 					<span>
 						<Plus className="text-black" />
