@@ -1,23 +1,32 @@
-import React from "react";
+import type { UserType } from "../types/api-types";
 import Avatar from "./avatar";
 
 type Props = {
-	name: string;
-	gmail: string;
+	user: UserType;
+	onClick?: () => void;
 };
 
-const UserCard = ({ name, gmail }: Props) => {
+const UserCard = ({ user, onClick }: Props) => {
 	return (
-		<div className="flex flex-col items-center justify-center rounded-lg bg-[#1E1E1E] shadow w-full py-6">
-			<div className="flex flex-col items-center justify-center gap-y-4">
-				<Avatar src="" alt="" className="" size={92} />
+		<div
+			className="group relative flex flex-col items-center justify-center rounded-lg bg-[#1E1E1E] shadow w-full py-6 cursor-pointer hover:bg-[#2A2A2A] transition-colors duration-200"
+			onClick={onClick}
+		>
 
-				<div className="flex flex-col items-center gap-y-2 ">
-					<div className="font-bold">
-						<p>{name}</p>
+			<div className="flex flex-col items-center justify-center gap-y-4">
+				<Avatar
+					src={user.avatar || ""}
+					alt={user.name}
+					className=""
+					size={92}
+				/>
+
+				<div className="flex-col items-center gap-y-2 flex">
+					<div className="font-bold text-white">
+						<p>{user.name}</p>
 					</div>
 					<div className="text-sm text-[#BBBBBB]">
-						<p>{gmail}</p>
+						<p>{user.email}</p>
 					</div>
 				</div>
 			</div>

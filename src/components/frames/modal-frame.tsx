@@ -1,5 +1,4 @@
 import { File, MapPin, Phone, Plus } from 'lucide-react';
-import React from 'react'
 import Avatar from '../avatar';
 import UserInformation from '../user-information';
 
