@@ -98,7 +98,7 @@ const Users = () => {
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-5 w-full">
 					{filteredUsers.map((user) => (
 						<UserCard
-							key={user.id}
+							key={`${user.id}--user-card--${user.email}`}
 							user={user}
 							onClick={() => handleUserClick(user)}
 						/>

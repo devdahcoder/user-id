@@ -23,9 +23,9 @@ const Header = () => {
 						<path
 							d="M15 15L19 19M1 9C1 11.1217 1.84285 13.1566 3.34315 14.6569C4.84344 16.1571 6.87827 17 9 17C11.1217 17 13.1566 16.1571 14.6569 14.6569C16.1571 13.1566 17 11.1217 17 9C17 6.87827 16.1571 4.84344 14.6569 3.34315C13.1566 1.84285 11.1217 1 9 1C6.87827 1 4.84344 1.84285 3.34315 3.34315C1.84285 4.84344 1 6.87827 1 9Z"
 							stroke="#838383"
-							stroke-width="1.5"
-							stroke-linecap="round"
-							stroke-linejoin="round"
+							strokeWidth="1.5"
+							strokeLinecap="round"
+							strokeLinejoin="round"
 						/>
 					</svg>
 				</form>
@@ -45,16 +45,16 @@ const Header = () => {
 							<path
 								d="M1 7H19M1 1H19M1 13H19"
 								stroke="#75787D"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
+								strokeWidth="2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
 							/>
 						</svg>
 					</button>
 
 					<Avatar
 						className="hidden md:flex"
-						src=""
+						src="'https://www.gravatar.com/avatar/'"
 						alt=""
 						size={40}
 					/>

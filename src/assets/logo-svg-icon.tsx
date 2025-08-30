@@ -2,7 +2,7 @@ const LogoSvgIcon = (props: { width?: number; height?: number }) => (
 	<svg
 		width={85}
 		height={26}
-		viewBox={`0 0 ${props?.width} #{props?.height}`}
+		viewBox={`0 0 ${props?.width ?? 85} ${props?.height ?? 26}`}
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
 		{...props}

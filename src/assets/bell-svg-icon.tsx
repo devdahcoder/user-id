@@ -2,7 +2,7 @@ const BellSvgIcon = (props: { width?: number; height?: number }) => (
 	<svg
 		width={18}
 		height={20}
-		viewBox={`0 0 ${props?.width} #{props?.height}`}
+		viewBox={`0 0 ${props?.width ?? 18} ${props?.height ?? 20}`}
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
 		{...props}

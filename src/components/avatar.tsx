@@ -1,12 +1,12 @@
 type Props = {
-  src: string;
+  src?: string;
   alt?: string;
   size?: number;
   className?: string;
 };
 
 const Avatar = ({
-  src,
+  src = 'https://www.gravatar.com/avatar/',
   alt = 'User Avatar',
   size = 48,
   className = '',

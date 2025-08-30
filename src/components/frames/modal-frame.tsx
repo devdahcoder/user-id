@@ -28,7 +28,12 @@ const ModalFrame = ({
 
 				<div className="flex flex-col gap-y-8">
 					<div className="flex flex-col items-center justify-center gap-y-4">
-						<Avatar src="" alt="" className="" size={92} />
+						<Avatar
+							src="'https://www.gravatar.com/avatar/'"
+							alt=""
+							className=""
+							size={92}
+						/>
 
 						<div className="flex flex-col items-center gap-y-2 ">
 							<div className="font-bold text-lg bg-gray-400 px-2 py-0.5">
